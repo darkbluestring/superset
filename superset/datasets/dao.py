@@ -159,7 +159,6 @@ class DatasetDAO(BaseDAO):  # pylint: disable=too-many-public-methods
             properties["metrics"] = cls.update_metrics(
                 model, properties.get("metrics", []), commit=commit
             )
-
         return super().update(model, properties, commit=False)
 
     @classmethod
